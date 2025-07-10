@@ -1,0 +1,17 @@
+name: Create Monthly Newsletter Issue
+
+on:
+  schedule:
+    - cron: '0 8 1 * *' # Runs at 08:00 UTC on the 1st of each month
+  workflow_dispatch: # Allows manual run from Actions tab
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create monthly newsletter planning issue
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: 📬 {{MONTH_NAME}} {{YEAR}} Newsletter Planning
+          content-filepath: .github/newsletter-templates/monthly-newsletter-template.md
+          labels: newsletter-draft
