@@ -35,7 +35,7 @@ You can also drop ideas in the Slack `#newsletter` channel or email us at [team@
 
 ## 🗓️ Deadlines
 
-- **Content submissions:** By the last day of the month (e.g. July 31 for the August issue)
+- **Content submissions:** By the 15th day of the month (e.g. August 15th for the August issue)
 - **Final draft + review:** 3 days before scheduled send
 - **Newsletter publish day:** The last Friday of each month
 
